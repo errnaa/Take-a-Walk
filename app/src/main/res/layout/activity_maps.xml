@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="taw.takeawalk.MapsActivity" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stats"
+        android:id="@+id/statsButton"
+        android:layout_gravity="right|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="911 (Hold)"
+        android:id="@+id/nineOneOneButton"
+        android:layout_gravity="left|bottom"
+        android:layout_alignBottom="@+id/emergencyButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/emergencyButton"
+        android:layout_toLeftOf="@+id/saferideButton"
+        android:layout_toStartOf="@+id/saferideButton" />
+
+    <Button
+        android:layout_width="127dp"
+        android:layout_height="84dp"
+        android:text="Emergency Contacts"
+        android:id="@+id/emergencyButton"
+        android:layout_gravity="right|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SafeRide (Hold)"
+        android:id="@+id/saferideButton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/emergencyButton"
+        android:layout_toLeftOf="@+id/emergencyButton"
+        android:layout_alignParentBottom="true" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        tools:context="taw.takeawalk.MapsActivity"
+        android:layout_gravity="center"
+        android:layout_above="@+id/emergencyButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/statsButton" />
+
+</RelativeLayout>
