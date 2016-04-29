@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'taw'
             keyPassword 'password'
-            storeFile file('/home/errnaa/Take-a-Walk/key.jks')
+            storeFile file('../key.jks')
             storePassword 'password'
         }
     }

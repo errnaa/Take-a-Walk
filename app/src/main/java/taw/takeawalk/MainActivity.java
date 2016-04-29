@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.InputType;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,14 +35,20 @@ public class MainActivity extends AppCompatActivity {
                 if (isChecked) {
                     ((TextView)findViewById(R.id.textView)).setText("");
                     ((TextView)findViewById(R.id.textView2)).setText("or");
-                    ((TextView) findViewById(R.id.editText)).setHint("Walking distance");
-                    ((TextView) findViewById(R.id.editText2)).setHint("Walking time");
+                    ((TextView) findViewById(R.id.editText)).setHint("Walking distance (miles)");
+                    ((TextView) findViewById(R.id.editText2)).setHint("Walking time (minutes)");
+                    ((TextView) findViewById(R.id.editText)).setInputType(InputType.TYPE_CLASS_NUMBER);
+                    ((TextView) findViewById(R.id.editText2)).setInputType(InputType.TYPE_CLASS_NUMBER);
                 } else {
                     ((TextView)findViewById(R.id.textView)).setText("Starting point:");
                     ((TextView)findViewById(R.id.textView2)).setText("Destination:");
                     ((TextView) findViewById(R.id.editText)).setHint("Current location");
                     ((TextView) findViewById(R.id.editText2)).setHint("");
+                    ((TextView) findViewById(R.id.editText)).setInputType(InputType.TYPE_CLASS_TEXT);
+                    ((TextView) findViewById(R.id.editText2)).setInputType(InputType.TYPE_CLASS_TEXT);
                 }
+                ((TextView) findViewById(R.id.editText)).setText("");
+                ((TextView) findViewById(R.id.editText2)).setText("");
             }
         });
     }

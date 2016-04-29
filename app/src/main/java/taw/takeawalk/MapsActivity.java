@@ -105,4 +105,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Polyline polyline = mMap.addPolyline(rectOptions);
         }
     }
+
+    public void goToStats(View view) {
+        Intent intent = new Intent (this, StatsActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToContacts(View view) {
+        Intent intent = new Intent (this, ContactsActivity.class);
+        startActivity(intent);
+    }
 }
