@@ -29,7 +29,8 @@
         android:textSize="25dp"
         android:layout_marginTop="27dp"
         android:layout_below="@+id/textView10"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="message" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +56,8 @@
         android:layout_toStartOf="@+id/Text1"
         android:layout_marginRight="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_alignBottom="@+id/textView11" />
+        android:layout_alignBottom="@+id/textView11"
+        android:onClick="call" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -67,7 +69,8 @@
         android:layout_toRightOf="@+id/MessageButton"
         android:layout_toEndOf="@+id/MessageButton"
         android:layout_alignTop="@+id/call1"
-        android:layout_alignBottom="@+id/call1" />
+        android:layout_alignBottom="@+id/call1"
+        android:onClick="message" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -91,7 +94,8 @@
         android:layout_alignTop="@+id/textView12"
         android:layout_alignLeft="@+id/call1"
         android:layout_alignStart="@+id/call1"
-        android:layout_alignBottom="@+id/textView12" />
+        android:layout_alignBottom="@+id/textView12"
+        android:onClick="call" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -103,7 +107,8 @@
         android:layout_alignLeft="@+id/Text1"
         android:layout_alignStart="@+id/Text1"
         android:layout_alignTop="@+id/Call2"
-        android:layout_alignBottom="@+id/Call2" />
+        android:layout_alignBottom="@+id/Call2"
+        android:onClick="message" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -127,7 +132,8 @@
         android:layout_alignBottom="@+id/textView13"
         android:layout_alignLeft="@+id/Call2"
         android:layout_alignStart="@+id/Call2"
-        android:layout_alignTop="@+id/textView13" />
+        android:layout_alignTop="@+id/textView13"
+        android:onClick="call" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -139,5 +145,6 @@
         android:layout_alignBottom="@+id/Call3"
         android:layout_alignLeft="@+id/Text2"
         android:layout_alignStart="@+id/Text2"
-        android:layout_alignTop="@+id/Call3" />
+        android:layout_alignTop="@+id/Call3"
+        android:onClick="message" />
 </RelativeLayout>
