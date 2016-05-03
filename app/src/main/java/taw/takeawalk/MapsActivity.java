@@ -88,7 +88,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     .add(new LatLng(40.110562, -88.223955))
                     .add(new LatLng(40.110373, -88.227742));
 
-            Polyline polyline = mMap.addPolyline(rectOptions);
+            mMap.addPolyline(rectOptions);
         } else {
             LatLng burnham = new LatLng(40.113091, -88.234671);
             mMap.addMarker(new MarkerOptions().position(burnham));
@@ -102,7 +102,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     .add(new LatLng(40.112686, -88.235419))
                     .add(new LatLng(40.112673, -88.234697));
 
-            Polyline polyline = mMap.addPolyline(rectOptions);
+            mMap.addPolyline(rectOptions);
         }
     }
 

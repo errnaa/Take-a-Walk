@@ -1,0 +1,1 @@
+Please run the project in release mode and not debug mode, because our Google Maps API key is registered to our release keystore.
